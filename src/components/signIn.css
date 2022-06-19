@@ -1,0 +1,33 @@
+#Hai{
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    margin:auto;
+
+   padding: 30px;
+   margin-top: 100px;
+   
+    
+}
+body{
+    background: linear-gradient(270deg,yellow,green);
+}
+#one{
+    font-size: 5em;
+    font-family:cursive;
+}
+#two{
+    color:rgb(53, 3, 252);
+    font-size: 3em;
+    width: fit-content;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border-radius: 3px;
+    border: orange 2px solid;
+    background-color: antiquewhite;
+    box-shadow: 1px 2px 3px 4px;
+}
+button:hover{
+    background-color: rgb(91, 4, 252);
+    color:bisque
+}

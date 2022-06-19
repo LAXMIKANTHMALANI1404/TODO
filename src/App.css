@@ -32,7 +32,106 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(43, 41, 41);
+    background: linear-gradient(rgb(248, 217, 217), rgb(250, 231, 197));
+    align-items: center;
+    /* z-index: 100; */
+}
+.Welcome{
+  flex:0.3;
+  justify-content: right;
+  justify-items:right;
+  font-size: 1em;
+}
+.TODO{
+  flex:0.25;
+  display: flex;
+  justify-content: left;
+  font-family: cursive;
+}
+.right{
+  
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right>img{
+  border-radius:50%;
+  border: black 1px solid;
+  margin-right: 20px;
+  height:50px;
+}
+.right>button{
+  border-radius: 3px;
+  background  : transparent;
+  margin-right: 30px;
+  height: 2em;
+  border: none;
+  font-weight: 100;
+  font-size: 1.5em;
+  /* z-index: -1; */
+}
+.right>button:hover{
+  background-color: rgba(0, 0, 0, 0.541);
+  color:rgb(252, 209, 110);
+}
+.AddTodo{
+  padding-top:20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ background: linear-gradient(270deg, yellow, green);;
+}
+.AddTodo >input{
+  /* flex:0.8; */
+  border :rgb(0, 0, 0) 3px solid;  
+  margin :10px;
+  border-radius: 20px;
+  font-size: 3em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.AddTodo > button{
+  /* height :3em; */
+  /* flex:0.2; */
+  /* width:3vw; */
+  background-color: rgb(111, 56, 56);
+  color:rgb(248, 209, 209);
+  border-radius: 20px;
+  font-weight: 200;
+  font-size:2em;
+  padding:5px;
+
+}
+.AddTodo > button:hover{
+  color:black;
+  background-color: yellow;
+}
+.container{
+  background:linear-gradient(35deg,rgb(54, 169, 246),rgb(244, 4, 4));
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (max-width:600px){
+    .AddTodo>input{
+      width:70vw;
+    }
+    .AddTodo>button{
+      font-size: 1em;
+    }
+}
+.sticky{
+  position: sticky;
+  top:0;
+  z-index: 999;
+  
 }
