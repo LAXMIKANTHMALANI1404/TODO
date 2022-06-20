@@ -40,3 +40,8 @@
         font-size: 1em;
     }
 }
+.change{
+    color:red;
+    transform: translateX(-200px);
+    transition: transform 1s;
+}

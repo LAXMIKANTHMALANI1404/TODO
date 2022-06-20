@@ -1,21 +1,18 @@
 import React,{useEffect,useState} from 'react'
 import './element.css'
 
-function Element({element,onClick,styles}) {
-  const [sty,setSty]=useState({});
- const [bo,setBo]=useState(false);
-function x(){
-  onClick();
-  setBo(true);
-}
- useEffect(()=>setSty(styles),[bo]);
+function Element({element,onClick,id}) {
   return (
-    <div style ={sty} className='flex change'>
+    <div  id={id} className='flex'>
+      <>  
+      
+      
         <h1>{element}</h1>
-      <button onClick={x}>
+      </>
+      <button onClick={onClick}>
         <>
             Done
-            {console.log(styles)}
+          
         </>
         </button>
     </div>
