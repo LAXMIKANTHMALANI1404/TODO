@@ -118,7 +118,7 @@ function App() {
               </div>
               <div className='AddTodo'>
 
-                <input type="text" value={message} onChange={e => (setMessage(e.target.value))} />
+                <input type="text" value={message} onChange={e => (setMessage(e.target.value))} onKeyPress={(e)=>{if(e.key=='Enter')AddMessage(message)}} />
                 <button type="submit" onClick={() => AddMessage(message)} onKeyPress={e => e.key === 'Enter' ? AddMessage(message) : console.log("No")}>Add Todo</button>
               </div>
             </div>

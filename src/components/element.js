@@ -9,7 +9,7 @@ function Element({element,onClick,id}) {
       
         <h1>{element}</h1>
       </>
-      <button onClick={onClick}>
+      <button onClick={onClick} onKeyPress={(e)=>(e.key=='Enter'?onClick:"")}>
         <>
             Done
           
