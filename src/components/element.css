@@ -42,6 +42,6 @@
 }
 .change{
     color:red;
-    transform: translateX(-400px);
+    transform: translateX(-100vw);
     transition: transform 1s;
 }
