@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { useEffect, useState } from 'react';
+import  React, { useEffect, useState } from 'react';
 import './App.css';
 import SignIn from './components/SingIn';
 // @ts-ignore
@@ -57,11 +57,7 @@ function App() {
       x();
     }
   }
-  const sty = {};
-  const styles = {
-    transfrom: "translateX(-300px)",
-    transition: "5s",
-  }
+  
   function fu(index){
     let f = [...dat];
     // f.filter((item,ind)=>(ind!==index));
